@@ -35,7 +35,7 @@ Another point to note is that the resolution of the terminal is not taken into a
 With the `-h` or `--help` flag we can print the following help message:
 
 ```bash
-ShowMe 1.0
+ShowMe 0.1.0
 Max Ferrer <maxi.fg13@gmail.com>
 Prints color patterns on the terminal
 
@@ -79,6 +79,7 @@ ShowMe requires the following tools and packages to build:
 Clone this repository and enter it:
 
 `git clone https://github.com/PandaFoss/showme.git`
+
 `cd showme`
 
 Finally, simply run:
@@ -88,14 +89,14 @@ Finally, simply run:
 ## FAQ
 
 <details>
-<summary>**Why doesn't it show information like neofetch?**</summary>
+<summary><b>Why doesn't it show information like neofetch?</b></summary>
 
 While at first that was the intention, it seemed pertinent to me to "keep it simple, stupid". For a fetching tool written in pure Rust I recommend [rsfetch](https://github.com/Phate6660/rsfetch).
 
 </details>
 
 <details>
-<summary>**Why not do it in a simple Bash script instead of a Rust executable?**</summary>
+<summary><b>Why not do it in a simple Bash script instead of a Rust executable?</b></summary>
 
 First of all, because `showme` was thought as a personal project to practice Rust.
 Secondly, because although for the purpose for which it was conceived, the fact that it is twice as fast (or even faster) than a Bash script is not very relevant, once a certain complexity or number of lines is reached, a Bash script becomes unfeasible, and it is necessary to resort to programming languages conceived for the purpose in question.

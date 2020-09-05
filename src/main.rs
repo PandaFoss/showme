@@ -7,7 +7,7 @@ use clap::{App, Arg};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let matches = App::new("ShowMe")
-        .version("1.0")
+        .version("0.1.0")
         .author("Max Ferrer <maxi.fg13@gmail.com>")
         .about("Prints color patterns on the terminal")
         .after_help("Available patterns: bars, blocks1, bloks, crunch, panes")
