@@ -47,8 +47,8 @@ jobs:
         run: |
           cd target/${{ matrix.target }}/release
 
-          strip sm${{ matrix.binary_postfix }}
-          tar czvf showme-${{ matrix.artifact_prefix }}.tar.gz sm${{ matrix.binary_postfix }}
+          strip showme${{ matrix.binary_postfix }}
+          tar czvf showme-${{ matrix.artifact_prefix }}.tar.gz showme${{ matrix.binary_postfix }}
           
           if [[ ${{ runner.os }} == 'Windows' ]]; then
             certutil -hashfile showme-${{ matrix.artifact_prefix }}.tar.gz sha256 | grep -E [A-Fa-f0-9]{64} > showme-${{ matrix.artifact_prefix }}.sha256
