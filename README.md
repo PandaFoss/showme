@@ -50,7 +50,7 @@ FLAGS:
 OPTIONS:
     -p, --patterns <PATTERN1,PATTERN2,...>    Prints the specified patterns
 
-Available patterns: bars, blocks1, bloks, crunch, panes
+Available patterns: arch, bars, blocks1, bloks, crunch, panes
 ```
 
 ### Patterns

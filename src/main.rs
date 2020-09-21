@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .version("0.1.0")
         .author("Max Ferrer <maxi.fg13@gmail.com>")
         .about("Prints color patterns on the terminal")
-        .after_help("Available patterns: bars, blocks1, bloks, crunch, panes")
+        .after_help("Available patterns: arch, bars, blocks1, bloks, crunch, panes")
         .arg(
             Arg::with_name("patterns")
                 .short("p")
@@ -34,6 +34,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     for pattern in patterns {
         match pattern {
+            "arch" => println!("{}", lib::arch(bw)),
             "bars" => println!("{}", lib::bars(bw)),
             "blocks1" => println!("{}", lib::blocks1(bw)),
             "bloks" => println!("{}", lib::bloks(bw)),

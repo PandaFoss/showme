@@ -82,3 +82,20 @@ pub fn crunch(bw: bool) -> String {
     }
     printer(colors, vec).unwrap()
 }
+
+pub fn arch(bw: bool) -> String {
+    let vec = vec![
+        "        ■      ",
+        "       ■■■     ",
+        "      ■■■■■    ",
+        "     ■(   )■   ",
+        "    ■■■■ ■■■■  ",
+        "   ■■       ■■ ",
+    ];
+    let mut colors = vec!["Red", "Green", "Yellow", "Blue", "Purple", "Cyan"];
+    if bw {
+        colors.insert(0, "Black");
+        colors.push("White");
+    }
+    printer(colors, vec).unwrap()
+}
