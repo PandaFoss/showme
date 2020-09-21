@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .version("0.1.0")
         .author("Max Ferrer <maxi.fg13@gmail.com>")
         .about("Prints color patterns on the terminal")
-        .after_help("Available patterns: arch, bars, blocks1, bloks, crunch, panes")
+        .after_help("Available patterns: arch, bars, blocks1, bloks, crunch, crunchbang, panes")
         .arg(
             Arg::with_name("patterns")
                 .short("p")
@@ -39,6 +39,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "blocks1" => println!("{}", lib::blocks1(bw)),
             "bloks" => println!("{}", lib::bloks(bw)),
             "crunch" => println!("{}", lib::crunch(bw)),
+            "crunchbang" => println!("{}", lib::crunchbang(bw)),
             "panes" => println!("{}", lib::panes(bw)),
             _ => bad_patterns.push(pattern),
         }
